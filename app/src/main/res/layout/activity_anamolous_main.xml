@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.allu.bank.UI.AnamolousDetails.AnamolousMainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_padding">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="@dimen/default_margin"
+                    android:layout_weight="50">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/red"
+                        android:onClick="onClick"
+                        android:id="@+id/btn_view"
+                        android:textSize="@dimen/default_text_2_size"
+                        android:text="View anamolous\ntransaction"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="@dimen/default_margin"
+                    android:layout_weight="50">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/btn_search"
+                        android:onClick="onClick"
+                        android:background="@color/lightblue"
+                        android:textSize="@dimen/default_text_2_size"
+                        android:text="Search anamolous\ntransaction"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
